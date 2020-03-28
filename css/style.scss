@@ -1,0 +1,16 @@
+// sass --watch style.scss:style.min.css --style compressed
+
+@import 'libraries/all.scss';
+
+@import 'variables/variables.scss';
+
+@import 'reset.scss';
+
+@import 'utility/utility.scss';
+
+@import 'components/all.scss';
+
+@import 'page/all.scss';
+
+
+
