@@ -1,12 +1,18 @@
 // Gets All global cases
 (async () => {
-  let data = await fetch("https://corona.lmao.ninja/all");
+  const data = await fetch("https://corona.lmao.ninja/all");
 
-  let all = await data.json();
+  const all = await data.json();
 
-  let allCases = all.cases;
-  let allDeaths = all.deaths;
-  let allRecovered = all.recovered;
+  const allCases = all.cases;
+  const allDeaths = all.deaths;
+  const allRecovered = all.recovered;
+
+  const caseContent = document.querySelector('#cases > .card-content');
+
+  caseContent.innerHTML = allCases;
+
+
 
   console.log(allCases);
   console.log(allDeaths);

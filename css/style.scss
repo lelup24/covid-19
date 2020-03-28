@@ -12,5 +12,15 @@
 
 @import 'page/all.scss';
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+#cases {
+    width: 10rem;
+    text-align: center;
+}
 
